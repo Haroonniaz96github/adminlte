@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "user",
+    "email": "user@domain.com",
+    "password": "123456",
+    "status": "user",
+    "imageUrl": "http://placeimg.com/641/481/tech"
+  },
+  {
+    "id": 2,
+    "name": "admin",
+    "email": "admin@domain.com",
+    "password": "123456",
+    "status": "admin",
+    "imageUrl": "http://placeimg.com/641/481/tech"
+  }
+]

@@ -1,41 +1,24 @@
-export default {
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-    state: {
+import account from './account'
+import product from './product'
+import category from './category'
 
-        category: []
+Vue.use(Vuex)
 
+export default function () {
+  const Store = new Vuex.Store({
+    modules: {
+      account,
+      product,
+      category
     },
 
-    getters: {
+    // enable strict mode (adds overhead!)
+    // for dev mode only
+    // strict: process.env.DEV
+  })
 
-        getCategoryFormGetters(state){ //take parameter state
-
-            return state.category
-        }
-    },
-
-    actions: {
-        allCategoryFromDatabase(context){
-
-            axios.get("api/category")
-
-                .then((response)=>{
-                    console.log(response.data.categories)
-                    context.commit("categories",response.data.categories) //categories will be run from mutation
-
-                })
-
-                .catch(()=>{
-
-                    console.log("Error........")
-
-                })
-        }
-    },
-
-    mutations: {
-        categories(state,data) {
-            return state.category = data
-        }
-    }
+  return Store
 }
