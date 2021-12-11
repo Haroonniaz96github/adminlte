@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Area;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class AreaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +16,11 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::latest()->get();
+        $areas = Area::latest()->get();
         // return response()->json($categories);
 
         return response()->json([
-            "categories" => $categories
+            "areas" => $areas
         ], 200);
     }
 
@@ -41,15 +42,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'name' => 'required',
-        ]);
-        $category = new Category();
-        $category->name=$request->name;
-        $category->save();
-        return response()->json([
-            "categories" => $category
-        ], 200);
+        //
     }
 
     /**
@@ -71,8 +64,10 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        $category=Category::findorfail($id);
-        return response()->json($category);
+        $area=Area::findorfail($id);
+        return response()->json([
+            "area" => $area
+        ], 200);
     }
 
     /**
@@ -84,13 +79,7 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-            'name' => 'required',
-        ]);
-        $category=Category::findorfail($id);
-        $category->name=$request->name;
-        $category->save();
-        return response()->json($category);
+        //
     }
 
     /**

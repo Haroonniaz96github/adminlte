@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\AreaController;
 
 
 /*
@@ -26,4 +27,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //    ]
 //);
 
-// Route::get('category', [CategoryController::class, 'index']);
+// Route::get('categories', [CategoryController::class, 'index']);
+// Route::post('store', [CategoryController::class, 'store']);
+// Route::get('edit/{id}', [CategoryController::class, 'edit']);
+// Route::post('update/{id}', [CategoryController::class, 'update']);
+
+Route::resource('/categories', CategoryController::class);
+Route::resource('/areas', AreaController::class);

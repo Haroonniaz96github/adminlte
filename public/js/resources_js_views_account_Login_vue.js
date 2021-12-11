@@ -80,7 +80,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.form-control {\r\n  border-radius: 0%;\r\n  height: 50px;\n}\n.login-form-container {\r\n  padding: 20px;\r\n  box-shadow: 0px 2px 5px 2px #888888;\n}\n.btn {\r\n  border-radius: 0%;\r\n  font-weight: bold;\r\n  background: teal;\r\n  border: teal;\n}\n.btn:hover {\r\n  background: #00b4b4;\n}\n.btn:focus {\r\n  background: teal;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.form-control {\n  border-radius: 0%;\n  height: 50px;\n}\n.login-form-container {\n  padding: 20px;\n  box-shadow: 0px 2px 5px 2px #888888;\n}\n.btn {\n  border-radius: 0%;\n  font-weight: bold;\n  background: teal;\n  border: teal;\n}\n.btn:hover {\n  background: #00b4b4;\n}\n.btn:focus {\n  background: teal;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

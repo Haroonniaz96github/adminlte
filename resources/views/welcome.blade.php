@@ -404,8 +404,8 @@
     </style>
 </head>
 
-<body class="antialiased">
-    <div id="app">
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper" id="app">
         <router-view></router-view>
     </div>
     <script src="{{ mix('js/app.js') }}"></script>

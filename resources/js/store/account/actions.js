@@ -18,3 +18,7 @@ export function login({ commit }) {
             console.log(error)
         });
 }
+
+export function updateCategory({ commit }) {
+    console.log(hello)
+}

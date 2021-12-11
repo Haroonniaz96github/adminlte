@@ -82,7 +82,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nnav {\r\n  background-color: teal;\n}\n.navbar-brand {\r\n  font-weight: bold;\r\n  font-size: 25px;\r\n  /* font-family: Comic; */\r\n  color: #ffffff !important;\n}\n.profile-image {\r\n  width: 50px;\r\n  border-radius: 100% !important;\n}\n.page-container {\r\n  padding-top: 81px;\n}\n.btn {\r\n  border-radius: 0%;\r\n  font-weight: bold;\r\n  background: teal;\r\n  border: teal;\n}\n.btn:hover {\r\n  background: #00b4b4;\n}\ninput {\r\n  border-radius: 0%;\n}\n.btn:focus {\r\n  background: teal;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nnav {\n  background-color: teal;\n}\n.navbar-brand {\n  font-weight: bold;\n  font-size: 25px;\n  /* font-family: Comic; */\n  color: #ffffff !important;\n}\n.profile-image {\n  width: 50px;\n  border-radius: 100% !important;\n}\n.page-container {\n  padding-top: 81px;\n}\n.btn {\n  border-radius: 0%;\n  font-weight: bold;\n  background: teal;\n  border: teal;\n}\n.btn:hover {\n  background: #00b4b4;\n}\ninput {\n  border-radius: 0%;\n}\n.btn:focus {\n  background: teal;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
